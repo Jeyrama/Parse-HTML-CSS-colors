@@ -46,3 +46,5 @@ function parseHTMLColor(color) {
     b: val % 256
   }
 }
+
+// or
