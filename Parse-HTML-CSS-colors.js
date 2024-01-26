@@ -30,3 +30,19 @@ Examples:
 
 
 // Solution
+
+function parseHTMLColor(color) {
+  let key = color.toLowerCase();
+  let rgb = (PRESET_COLORS[key] || key).slice(1);
+  
+  if (rgb.length === 3)
+    rgb = rgb.replace(/./g, '$&$&');
+    
+  let val = parseInt(rgb, 16);
+  
+  return { 
+    r: val / 65536 | 0,
+    g: (val / 256 | 0) % 256,
+    b: val % 256
+  }
+}
