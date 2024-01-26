@@ -27,3 +27,6 @@ Examples:
   parseHTMLColor('#3B7');       // => { r: 51,  g: 187, b: 119 }
   parseHTMLColor('LimeGreen');  // => { r: 50,  g: 205, b: 50  }
 */
+
+
+// Solution
